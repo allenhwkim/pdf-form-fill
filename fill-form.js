@@ -8,6 +8,7 @@ pdftk
        first: 'Allen',
        last: 'Kim',
        mid: 'HONG',
+       sex: 'M',
        y_birth: '2001',
        m_birth: '08',
        d_birth: '08'
