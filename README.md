@@ -1,5 +1,5 @@
 # pdf-form-fill
-Fill out pdf form with pdf-lib
+Fill out pdf form using pdfjs-dist and node-pdftk
 
 
 ## Install
