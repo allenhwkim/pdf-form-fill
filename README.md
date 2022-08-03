@@ -6,7 +6,10 @@ Fill out pdf form using pdfjs-dist and node-pdftk
 
 ### pdftk install
 Your system must have pdftk installed
-  * For ubuntu, $ sudo apt install pdftk-java
+  * For ubuntu, 
+    ```
+    $ sudo apt install pdftk-java
+    ```
 
 ```
 $ npm i
