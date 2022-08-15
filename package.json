@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "pdf-lib": "^1.17.1"
   },
   "dependencies": {
     "node-pdftk": "^2.1.3",

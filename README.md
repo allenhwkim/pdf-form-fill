@@ -1,29 +1,27 @@
 # pdf-form-fill
-Fill out pdf form using pdfjs-dist and node-pdftk
+Fill out pdf form using pdfjs-dist and pdf-lib(or pdftk)
 
+# Usage
 
-## Install
-
-### ATTENTION: [pdftk](https://en.wikipedia.org/wiki/PDFtk) required
-Your system must have pdftk installed
-  * For ubuntu, 
-    ```
-    $ sudo apt install pdftk-java
-    ```
-### now, install packages
+### pdf-lib example
+* Pros: No system-level dependency
+* Cons: Not supporting encrypted pdf files. 
+  e.g. pdftk-example/0265-82.pdf(128-bit aes encrypted with permission password)
 ```
 $ npm i
+$ cd pdf-lib-example
+$ node fill-form.js # example.pdf + data = output.pdf
 ```
+| template | output |
+| --------- | ------- |
+| ![image](https://user-images.githubusercontent.com/1437734/184568496-4c02598d-1374-4a8f-a5d9-2d9bfa470788.png)  |  ![image](https://user-images.githubusercontent.com/1437734/184568414-54f2dd68-9235-4263-b999-4fad9ed69334.png) |
 
-## USAGE
-
-To get list of PDF form fileds
+### pdftk example
+* Pros: Support encryted pdf files
+* Cons: [pdftk](https://en.wikipedia.org/wiki/PDFtk) required  
+  For ubuntu, `$ sudo apt install pdftk-java`
 ```
-$ node ./index.js # it outputs all list of form fields
+$ npm i
+$ cd pdftk-examle
+$ node fill-form.js # 0265-82.pdf + data = output.pdf
 ```
-
-To fill the form
-```
-$ node ./fill-form.js # output to output.pdf
-```
-
